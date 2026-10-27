@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Students</title>
+    <style>
+        body { background: white; color: black; font-family: sans-serif; }
+    </style>
+</head>
+<body>
+    <h1>Students</h1>
+    <ul>
+        {% for name in students %}
+        <li>{{ name }}</li>
+        {% else %}
+        <li>No students found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
